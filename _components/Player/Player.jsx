@@ -45,7 +45,7 @@ const Player = ({ src }) => {
               <ControlsPlayer
                 togglePlaying={togglePlaying}
                 volume={volume}
-                // toggleSkip={toggleSkip}
+                toggleSkip={toggleSkip}
                 videoRef={videoRef}
                 isPlaying={isPlaying}
                 changeVolume={changeVolume}
