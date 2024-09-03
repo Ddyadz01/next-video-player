@@ -51,7 +51,7 @@ export const usePlayer = () => {
     const width = e.target.offsetWidth;
     const click = e.nativeEvent.layerX;
     setProgress((click / width) * 100);
-    setCurrentTime(videoRef.current.duration * (click / width));
+    // setCurrentTime(videoRef.current.duration * (click / width));
     videoRef.current.currentTime = videoRef.current?.duration * (click / width);
   };
 
