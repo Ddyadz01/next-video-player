@@ -26,6 +26,10 @@ const Player = ({ src }) => {
       <div className="video" onClick={togglePlaying}>
         {!isPlaying && <PlayIconPlayer />}
         <video
+          autoPlay={false}
+          controls={false}
+          muted={false}
+          loop={false}
           ref={videoRef}
           src={src}
           preload="auto"
