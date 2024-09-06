@@ -5,7 +5,8 @@ export const usePlayer = () => {
 
   const videoRef = useRef();
 
-  const togglePlaying = () => {
+  const togglePlaying = (e) => {
+    e.preventDefault();
     if (!videoRef.current) return;
     if (isPlaying) {
       videoRef.current.pause();
