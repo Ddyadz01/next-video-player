@@ -27,7 +27,7 @@ const Player = ({ src }) => {
         {!isPlaying && <PlayIconPlayer />}
         <video
           autoPlay={false}
-          playsinline
+          allowfullscreen={false}
           controls={false}
           muted={false}
           loop={false}
